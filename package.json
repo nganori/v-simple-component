@@ -1,11 +1,11 @@
 {
-  "name": "v-simple-component",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@nganori/v-simple-component",
+  "version": "0.1.2",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-lib": "vue-cli-service build --target lib --name v-simple-component src/main.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -38,5 +38,12 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json",
+    "*.js"
+  ],
+  "main": "./dist/v-simple-component.common.js"
 }
